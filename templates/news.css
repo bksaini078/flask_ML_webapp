@@ -64,13 +64,26 @@ p {
 }
 
 .member {
-    margin-top: 90px;
+    margin-top: 40px;
     margin-bottom: 100px;
     margin-right: 0px;
     margin-left: 900px;
     text-align: right;
 }
+.exampletxt{
+    text-align: right;
 
+}
+.githublink{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-right: 0px;
+    margin-left: 900px;
+    text-align: left;
+}
+.author{
+    text-align: center;
+}
 h4 {
     color: black;
     opacity: 0.8;

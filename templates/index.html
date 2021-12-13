@@ -17,8 +17,9 @@
     </div>
     <div class="upload-container">
         <title>Upload test file </title>
-        <h3>Upload Test file(.csv) containing Article and Label for evaluation and prediction of models.</h3>
-        <h3> Or '.txt' file containing article for prediction.</h3>
+        <h3>Upload Test file(.csv) containing Article and Label(Binary) for evaluation of models.</h3>
+        <a href="static/files/x_test.csv" download>ExampleTestForUploading.csv</a>
+        <h3> Or '.txt' file containing only single article for prediction.</h3>
         <form method=post enctype=multipart/form-data>
             <input type=file name=xfile>
             <input type=submit value=Upload>
@@ -34,19 +35,33 @@
 
     <div class="meanteacher">
         <h2>Mean Teacher</h2>
+        <p>In the mean teacher model, two identical models are trained
+            with two different strategies called student and teacher model.
+            In which, only student model is trained, however, during
+            training exponential moving weights are assigned to the
+            teacher hence it is called as Mean teacher.In our project, 
+            we are evaluating this approach in text classification problem
+             using four different noise strategies.</p>
+
         <l>
             <li>With Synonym as noise</li>
             <li>With Dropouts</li>
             <li>With Synonym and Dropouts</li>
             <li>With Unlabel data</li>
         </l>
-      </div>
-
-    <h4>Institute for Web Science and Technologies-SS2020 </h4>
-    <a href="https://github.com/bksaini078/fake_news_detection" target="_blank">github repository</a>
-    <div class='author'>
-        <p>Designed and Developed by: Bhupender Kumar Saini</p>
     </div>
+
+    <div class='githublink'>
+        <h3>Reference Links</h3>
+        <l>
+            <li><a href="https://github.com/bksaini078/fake_news_detection" target="_blank">Github Repository</a></li>
+            <li><a href="static/files/Fake_News_detection.pdf" target="_blank">Download Paper</a></li>
+        </l>   
+    </div>
+    <div class='author'>
+        <p>Designed and Developed by: <a href="https://www.linkedin.com/in/bksaini078/" target="_blank">Bhupender Kumar Saini</a></p>
+    </div>
+
 </body>
 
 </html>
